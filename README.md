@@ -1,8 +1,8 @@
 ## Стек
 
-- Python > 3.7
+- Python = 3.11
   - isort, black, autoflake
-  - Django < 3.3
+  - Django = 4.2
   - Celery[Redis]
 - VSCode
 - SQLite 3
