@@ -31,6 +31,8 @@ ALLOWED_HOSTS = ["*"]
 # Application definition
 
 INSTALLED_APPS = [
+    "admin_interface",
+    "colorfield",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
@@ -40,8 +42,13 @@ INSTALLED_APPS = [
     "markdownify.apps.MarkdownifyConfig",
     "social_django",
     "mainapp",
+    "crispy_forms",
+    "crispy_bootstrap4",
     "authapp",
 ]
+
+X_FRAME_OPTIONS = "SAMEORIGIN"
+SILENCED_SYSTEM_CHECKS = ["security.W019"]
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
@@ -156,3 +163,7 @@ MESSAGE_STORAGE = "django.contrib.messages.storage.session.SessionStorage"
 SOCIAL_AUTH_GITHUB_KEY = "Ov23liPpSzJlsjREUbsY"
 SOCIAL_AUTH_GITHUB_SECRET = "03940abd16ad965e0d98e0fd3b428bcdd2a9e232"
 # Delete this before deployment
+
+
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap4"
+CRISPY_TEMPLATE_PACK = "bootstrap4"
