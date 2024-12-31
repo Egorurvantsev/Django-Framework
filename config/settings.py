@@ -169,11 +169,6 @@ LOGOUT_REDIRECT_URL = "mainapp:main_page"
 MESSAGE_STORAGE = "django.contrib.messages.storage.session.SessionStorage"
 
 
-SOCIAL_AUTH_GITHUB_KEY = "Ov23liPpSzJlsjREUbsY"
-SOCIAL_AUTH_GITHUB_SECRET = "03940abd16ad965e0d98e0fd3b428bcdd2a9e232"
-# Delete this before deployment
-
-
 CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap4"
 CRISPY_TEMPLATE_PACK = "bootstrap4"
 
